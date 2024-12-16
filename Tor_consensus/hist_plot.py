@@ -53,7 +53,7 @@ with open(TARGET_HIST_CONSENSUS,"r") as consensus2018:
 				b64_router1_desc_hash=b64_router1_desc_hash+'='
 			print("Router's name: " + router_name)			
 			print("Router's b64 hash: " + b64_router1_desc_hash)
-			router1_filename=base64.b64decode(b64_router1_desc_hash).encode('hex')
+			router1_filename = base64.b64decode(b64_router1_desc_hash).hex()
 			print("Router's filename(Hex): " +router1_filename)
 	
 			router1_desc_file_found = True;
